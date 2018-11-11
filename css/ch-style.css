@@ -14,21 +14,20 @@
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 li {
   display: inline-block;
 }
 
 li:hover span {
-  float: left;
+  float: center;
   display: inline-block;
   text-align: center;
   font-weight: bold;
 }
+
+/*************************
+Media Queries
+*************************/
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -36,11 +35,19 @@ li:hover span {
   .topnav a {
     display: block;
     width: 100%;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: center;
   }
 }
 
 /*Homepage should have h1 sections alternating, left and right, accompanied by a photo/map/interactive element*/
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 h1 {
   color: teal;
