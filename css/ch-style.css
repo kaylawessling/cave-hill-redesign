@@ -50,11 +50,11 @@ img {
 }
 
 h1 {
-  color: teal;
+  color: teal
 }
 
 h2 {
-  color: gray;
+  color: darkgray;
 }
 
 h3 {
@@ -67,7 +67,7 @@ h3 {
   color: white;
   background-color: teal;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -83,6 +83,20 @@ Burial Options Page Elements
   padding: 15px;
   margin: 15px;
   background-color: lightgray;
+  font-display: block;
+}
+
+input {
+  padding: 5px;
+  margin: 3px;
+  font-display: block;
+}
+
+.submission-title {
+  color: black;
+  font-size: 1.4em;
+  font-display: block;
+  text-align: center;
 }
 
 .submit-button {
