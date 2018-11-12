@@ -73,6 +73,18 @@ h3 {
   width: 100%;
 }
 
+/*************************
+Burial Options Page Elements
+*************************/
+
+.options-submission {
+  width: 40%;
+  border:none;
+  padding: 15px;
+  margin: 15px;
+  background-color: lightgray;
+}
+
 .submit-button {
   background-color: teal;
   color: white;
