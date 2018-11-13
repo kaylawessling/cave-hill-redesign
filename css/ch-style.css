@@ -1,12 +1,12 @@
 /*************************
 Navbar Container
 *************************/
-.topnav {
+.main-nav {
   overflow: hidden;
   background-color: white;
 }
 
-#logo-nav {
+#main-header {
   display: block;
   vertical-align: middle;
   width: 289px;
@@ -24,7 +24,7 @@ Navbar links
   width: 289px;
 }
 
-.topnav a {
+.main-nav a {
   float: left;
   display: inline-block;
   color: teal;
@@ -46,7 +46,7 @@ li:hover span {
 
 
 /*************************
-General Style
+Base Element Styles
 *************************/
 body {
   font-size: 1.1em;
@@ -141,7 +141,7 @@ Media Queries
 *************************/
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   #main-nav {
     display: block;
     width: 100%;
@@ -155,8 +155,8 @@ Media Queries
     width:75%;
 }
 
-  .topnav li,
-  .topnav a {
+  .main-nav li,
+  .main-nav a {
     display: block;
     width: 100%;
     background-color: teal;
@@ -173,4 +173,4 @@ Media Queries
     background-color: lightgray;
     font-display: block;
   }
-}
+} */
