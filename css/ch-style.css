@@ -6,15 +6,22 @@ Navbar Container
   background-color: white;
 }
 
+#logo-nav {
+  display: block;
+  vertical-align: middle;
+  width: 289px;
+}
+
 /*************************
 Navbar links
 *************************/
 
-#logo-nav {
+#main-nav {
   float: left;
   vertical-align: middle;
   position: relative;
-  width: 35%;
+  display: block;
+  width: 289px;
 }
 
 .topnav a {
@@ -37,55 +44,34 @@ li:hover span {
   font-weight: bold;
 }
 
-/*************************
-Media Queries
-*************************/
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav li,
-  .topnav a {
-    display: block;
-    width: 100%;
-    background-color: teal;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .options-submission {
-    width: 40%;
-    border:none;
-    padding: 15px;
-    margin: 15px;
-    background-color: lightgray;
-    font-display: block;
-  }
-}
 
 /*************************
 General Style
 *************************/
-
+body {
+  font-size: 1.1em;
+  font-family: 'Catriel', sans-serif;
+  color: darkgray;
+}
 img {
   max-width: 100%;
   height: auto;
 }
 
 h1 {
-  display: block;
   margin-bottom: 10px;
+  text-transform: uppercase;
   color: teal
 }
 
 h2 {
   display: block;
-  color: darkgray;
+  color: teal;
 }
 
 h3 {
   display: block;
-  color: darkgray;
+  color: teal;
 }
 
 p {
@@ -103,7 +89,7 @@ Sticky Footer
   background-color: teal;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: 0;
   bottom: 0;
   width: 100%;
 }
@@ -127,15 +113,64 @@ input {
   font-display: block;
 }
 
+input[type=text], textarea {
+    width:70%;
+    margin-top: 5px;
+}
+
+input[type=checkbox], textarea {
+    margin-top: 10px;
+}
+
 .submission-title {
   color: black;
   font-size: 1.4em;
   font-display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .submit-button {
   background-color: teal;
   color: white;
   padding: 10px;
+  margin-top: 10px;
+}
+
+/*************************
+Media Queries
+*************************/
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #main-nav {
+    display: block;
+    width: 100%;
+    float: center;
+    vertical-align: middle;
+    position: relative;
+    align-content: center;
+  }
+
+  input[type=text], textarea {
+    width:75%;
+}
+
+  .topnav li,
+  .topnav a {
+    display: block;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .options-submission {
+    width: 100%;
+    border:none;
+    padding: 15px;
+    margin: 15px;
+    background-color: lightgray;
+    font-display: block;
+  }
 }
