@@ -1,10 +1,15 @@
-/* The navbar container */
+/*************************
+Navbar Container
+*************************/
 .topnav {
   overflow: hidden;
   background-color: white;
 }
 
-/* Navbar links */
+/*************************
+Navbar links
+*************************/
+
 #logo-nav {
   float: left;
   vertical-align: middle;
@@ -58,7 +63,9 @@ Media Queries
   }
 }
 
-/*Homepage should have h1 sections alternating, left and right, accompanied by a photo/map/interactive element*/
+/*************************
+General Style
+*************************/
 
 img {
   max-width: 100%;
@@ -66,16 +73,28 @@ img {
 }
 
 h1 {
+  display: block;
+  margin-bottom: 10px;
   color: teal
 }
 
 h2 {
+  display: block;
   color: darkgray;
 }
 
 h3 {
+  display: block;
   color: darkgray;
 }
+
+p {
+  margin-top: 20px;
+}
+
+/*************************
+Sticky Footer
+*************************/
 
 .footer {
   min-height: calc (100vh - 89px);
