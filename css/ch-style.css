@@ -65,36 +65,59 @@ Base Element Styles
 body {
   font-size: 1.1em;
   font-family: 'Catriel', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:20px;
   color: darkgray;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
 
 h1 {
+  font-size: 1.8em;
   display: block;
-  margin-bottom: 10px;
+  margin-top: 30px;
   text-transform: uppercase;
   color: teal
 }
 
-h2 {
-  display: block;
-  color: teal;
-}
-
-h3 {
-  display: block;
+h4,
+h5 {
   color: teal;
 }
 
 p {
-  margin-top: 20px;
+  flex: auto;
 }
 
 /*************************
-Sticky Footer
+Index: Plan Your Visit
+*************************/
+
+.plan-your-visit {
+
+  border-radius: 5px;
+  float: right;
+  background-color: lightgray;
+  margin: 15px;
+  padding: 20px;
+}
+
+.plan-your-visit, p {
+  color: black;
+}
+
+#ali {
+  width: 100%;
+  border: solid white 3px;
+  float: left;
+}
+
+/*************************
+Footer
 *************************/
 
 .footer {
@@ -116,7 +139,7 @@ secondary col {
   background-color:teal;
 }
 
-.options-submission {
+#options-submission {
   width: 40%;
   border:none;
   padding: 15px;
@@ -194,7 +217,7 @@ Media Queries
    order: -1;
  }
 
- .options-submission {
+ #options-submission {
    width: 100%;
    border:none;
    padding: 15px;
