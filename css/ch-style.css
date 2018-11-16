@@ -1,35 +1,49 @@
-/*************************
+/* ************************
 Navbar Container
 *************************/
-.main-nav {
-  overflow: hidden;
-  background-color: white;
+#flex-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-around;
+  display: inline flex;
+  float: right;
+  text-align: center;
+  width: 100%;
 }
 
-#main-header {
-  display: block;
-  vertical-align: middle;
-  width: 289px;
+#header, ul {
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+#logo {
+  float: left;
+  width: 40%;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: teal;
 }
 
 /*************************
 Navbar links
 *************************/
-
-#main-nav {
-  float: left;
-  vertical-align: middle;
-  position: relative;
-  display: block;
-  width: 289px;
+.nav-links {
+  float: right;
+  display: inline;
+  margin-top: 30px;
+  width: 50%;
 }
 
-.main-nav a {
-  float: left;
-  display: inline-block;
+.nav-links, a {
   color: teal;
   text-align: center;
-  padding: 16px 16px;
+  padding: 16px;
   text-decoration: none;
 }
 
@@ -37,12 +51,12 @@ li {
   display: inline-block;
 }
 
-li:hover span {
+/* li:hover span {
   float: center;
   display: inline-block;
   text-align: center;
   font-weight: bold;
-}
+} */
 
 
 /*************************
@@ -59,6 +73,7 @@ img {
 }
 
 h1 {
+  display: block;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: teal
@@ -97,6 +112,9 @@ Sticky Footer
 /*************************
 Burial Options Page Elements
 *************************/
+secondary col {
+  background-color:teal;
+}
 
 .options-submission {
   width: 40%;
@@ -140,37 +158,48 @@ input[type=checkbox], textarea {
 Media Queries
 *************************/
 
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-  #main-nav {
-    display: block;
-    width: 100%;
-    float: center;
-    vertical-align: middle;
-    position: relative;
-    align-content: center;
+/* On screens that are 769px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media (max-width: 769px) {
+
+  #logo {
+    display: none;
   }
 
-  input[type=text], textarea {
-    width:75%;
+ #header {
+   margin-top: 0;
+   display: block;
+   width: 100%;
+   content: inherit;
+   float: center;
+   vertical-align: middle;
+   position: relative;
+   align-content: center;
+ }
+
+ input[type=text], textarea {
+   width:75%;
 }
 
-  .main-nav li,
-  .main-nav a {
-    display: block;
-    width: 100%;
-    background-color: teal;
-    color: white;
-    padding: 10px;
-    text-align: center;
-  }
+ #header li,
+ #header a {
+   display: block;
+   width: 100%;
+   background-color: teal;
+   color: white;
+   padding: 10px;
+   text-align: center;
+ }
 
-  .options-submission {
-    width: 100%;
-    border:none;
-    padding: 15px;
-    margin: 15px;
-    background-color: lightgray;
-    font-display: block;
-  }
-} */
+ .primary col {
+   order: -1;
+ }
+
+ .options-submission {
+   width: 100%;
+   border:none;
+   padding: 15px;
+   margin: 15px;
+   background-color: lightgray;
+   font-display: block;
+ }
+}
